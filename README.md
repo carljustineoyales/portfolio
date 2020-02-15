@@ -1,5 +1,28 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<hr>
+<h1>Road Map</h1>
 
+<h3>Feb 15 2020</h3>
+<ul>
+  <li>Implement BEM</li>
+  <li>SCSS variables</li>
+</ul>
+<h4><strong>Added</strong></h4>
+<ul>
+  <li>About Section</li>
+  <li>Works Section</li>
+  <li>Experience Section</li>
+  <li>Contact Section</li>
+</ul>
+<hr>
+
+<h3>Feb 14 2020</h3>
+<ul>
+  <li>Initial Commit</li>
+  <li>Navbar Component</li>
+  <li>Implement Sass</li>
+</ul>
+<hr>
 ## Available Scripts
 
 In the project directory, you can run:
