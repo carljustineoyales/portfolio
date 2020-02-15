@@ -1,0 +1,112 @@
+@import '../Sass/classes';
+@import '../Sass/variables';
+
+.works {
+  width: 100%;
+  &__title {
+    @include header-title;
+    margin-bottom: 1.5em;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1em;
+    align-items: center;
+    margin-bottom: 5em;
+    height: auto;
+    
+    &--even{
+      direction: ltr;
+      text-align: right;
+    }
+    
+    &--odd{
+      direction: rtl;
+      text-align: left;
+    }
+
+  }
+
+  &__image {
+    $height:400px;
+    $width:600px;
+    position: relative;
+    height:  $height;
+    
+    
+    
+  }
+
+  &__overlay{
+    background-color: $color1;    
+    $height:400px;
+    $width:calc(( 5em * 7) + 1em);
+    position: absolute;
+    height:  $height;
+    
+    img{
+      left: 0;
+      top: 0;
+      width: $width;
+      height:  $height;
+      object-fit: cover;
+      object-position: 0 0;
+      opacity: 0.5;
+      transition: 0.3s ease-in-out;
+    }
+    &:hover{
+      img{
+        opacity: 1
+      }
+      
+    }
+    
+  }
+
+  &__details{
+    grid-column-start: -1;
+    grid-column-end: 6;
+    z-index: 2;
+
+    &-featured{
+      color:$color1;
+      display: flex;
+      justify-content: flex-end;
+    }
+    &-title{
+      font-size: 2em;
+      color: $color4;
+      display: flex;
+      justify-content: flex-end;
+    }
+    &-desc{
+      padding:1em;
+      background: #343636;
+      
+    }
+    &-list{
+      display: flex;
+      justify-content: flex-end;
+      margin-top:0.5em
+    }
+    &-tags,&-links{
+      padding:0.5em
+    }
+  }
+
+  &__container-btn{
+    display: flex;
+    justify-content: center;
+  }
+  &__btn{
+    @include btn;
+    
+    &--primary{
+      @include primary;
+      &--lg{
+        @include lg;
+      }
+    }
+  }
+}

@@ -1,0 +1,84 @@
+@import '../Sass/variables';
+@import '../Sass/classes';
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &__title {
+    @include header-title;
+  }
+
+  &__content {
+    display: flex;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 50%);
+    grid-gap: 1em;
+    grid-auto-flow: column;
+    overflow: auto;
+    cursor: grab;
+  }
+
+  &__items {
+    margin: 1em
+  }
+
+  &__card{
+    border:1px solid $color1;
+    min-height: 100%;
+    border-radius: 6px;
+    opacity: 0.6;
+    &-header{
+      padding:0.5em 1em;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom:1em ;
+      &--active{
+        background-color: $color1;
+        color: $color3;
+      }
+    }
+    &-body{
+      padding:1em;
+    }
+    &--active{
+      opacity: 1;
+    }
+  }
+
+  &__position-desc{
+    margin-top: 0.5em;
+  }
+
+  &__company{
+    max-width: 50%;
+  }
+  &__duration{
+    max-width: 30%;
+  }
+
+  &__list::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: $color3;
+  }
+
+  &__list::-webkit-scrollbar {
+    border-radius: 10px;
+    height: 6px;
+    background-color: $color3;
+  }
+
+  &__list::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, .3);
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
+    background-color: $color2;
+  }
+
+}

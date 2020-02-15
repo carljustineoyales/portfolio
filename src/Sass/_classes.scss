@@ -1,0 +1,67 @@
+/*
+*
+*
+* BUTTONS
+*
+*/
+@mixin btn{
+  background-color: $color3;
+  border: 1px solid $color2;
+  color: $color2;
+  border-radius: 4px;
+  padding: 0.5em 1em;
+}
+
+@mixin primary {
+  background-color: $color3;
+  border: 1px solid $color2;
+  color: $color2;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    background-color: $color2;
+    border: 1px solid $color2;
+    color: $color3;
+  }
+}
+@mixin secondary {
+  background-color: $color3;
+  border: 1px solid $color1;
+  color: $color1;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    background-color: $color1;
+    border: 1px solid $color1;
+    color: $color3;
+  }
+}
+
+@mixin lg{
+  padding: 1.5em 3em;
+}
+
+/*
+*
+*
+* Header Title
+*
+*/
+
+
+@mixin header-title{
+  color:$color4;
+  font-size:2em;
+  margin-bottom: 1em;
+}
+
+/*
+*
+*
+* Inline Links
+*
+*/
+
+@mixin link{
+  color:$color2;
+}

@@ -1,0 +1,50 @@
+@import '../Sass/variables';
+@import '../Sass/classes';
+.herobanner{
+  width: 100%;
+  // min-height: 100vh;
+  
+  &__subheader{
+    font-family: $font-secondary;
+    color:$color4;
+    font-size: 1.5em;
+  //  line-height: 1.1em;
+  }
+
+  &__header{
+    font-family: $font-primary;
+    font-size: 4em;
+    
+  }
+
+  &__typewriter{
+    font-family: $font-secondary;
+    font-size:2em;
+    span{
+      color:$color5;
+    }
+    
+    margin-bottom:1.5em ;
+  }
+
+  &__desc{
+    display: inline-block;
+    font-family: $font-secondary;
+    font-size:1.2em;
+    color:$color5;
+    max-width: 26em;
+    line-height: 1.5em;
+  }
+
+  &__btn{
+    @include btn;
+    display: inline-block;
+    margin-top:2em ;
+    &--primary{
+      @include primary;
+      &--lg{
+        @include lg;
+      }
+    }
+  }
+}

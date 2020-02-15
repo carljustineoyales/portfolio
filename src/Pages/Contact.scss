@@ -1,0 +1,34 @@
+@import '../Sass/classes';
+@import '../Sass/variables';
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  &__title{
+    @include header-title;
+    margin:0.5em;
+  }
+
+  &__header{
+    font-size: 4em;
+    margin-bottom: 0.5em;
+  }
+
+  &__desc{
+    width: 60%;
+    margin-bottom:2em;
+  }
+
+  &__btn{
+    @include btn;
+    &--primary{
+      @include primary;
+      &--lg{
+        @include lg;
+      }
+    }
+  }
+}
