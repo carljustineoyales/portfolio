@@ -1,5 +1,5 @@
 @import '../../Sass/variables';
-
+@import '../../Sass/classes';
 .footer{
   &__content{
     background-color: #0e0e0e;
@@ -11,5 +11,9 @@
   &__items{
     display: inline-block; 
     padding: 1em;
+  }
+  &__links{
+    font-size: 1.4em;
+    @include link;
   }
 }

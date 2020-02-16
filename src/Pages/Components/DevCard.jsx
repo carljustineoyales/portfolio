@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
-import { library } from '@fortawesome/fontawesome-svg-core'
-import {far} from '@fortawesome/free-regular-svg-icons';
-import {faFolderOpen,faExternalLinkAlt} from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import axios from 'axios';
-library.add(far,faFolderOpen,faExternalLinkAlt);
 export class DevCard extends Component {
   constructor(props) {
     super(props);

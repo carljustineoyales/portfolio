@@ -7,10 +7,10 @@ import DesignCard from './Components/DesignCard';
 import {Link} from 'react-router-dom';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import {fas} from '@fortawesome/free-solid-svg-icons';
-import {faChevronLeft} from '@fortawesome/free-solid-svg-icons';
+// import {faChevronLeft} from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import axios from 'axios'
-library.add(fas,faChevronLeft);
+library.add(fas);
 export class Archive extends Component {
 
   constructor(props) {
