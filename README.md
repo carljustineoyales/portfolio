@@ -10,6 +10,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 <h4><strong>Added</strong></h4>
 <ul>
   <li>Error handling for Dev Cards</li>
+  <li>Pages folder</li>
 </ul>
 <hr>
 
