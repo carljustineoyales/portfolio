@@ -2,6 +2,30 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 <hr>
 <h1>Road Map</h1>
 
+<h3>Feb 17 2020</h3>
+<ul>
+  <li>Github Rest API</li>
+  <li>Implemented react-router-dom go back function</li>
+</ul>
+<h4><strong>Added</strong></h4>
+<ul>
+  <li>Error handling for Dev Cards</li>
+</ul>
+<hr>
+
+<h3>Feb 16 2020</h3>
+<ul>
+  <li>Fontawesome Icons</li>
+</ul>
+<h4><strong>Added</strong></h4>
+<ul>
+  <li>Archive Page</li>
+  <li>Dev Cards</li>
+  <li>Design Cards</li>
+  <li>Footer</li>
+</ul>
+<hr>
+
 <h3>Feb 15 2020</h3>
 <ul>
   <li>Implement BEM</li>

@@ -7,7 +7,7 @@ export class Experience extends Component {
 
   render() {
     return (
-      <section className='container'>
+      <section id='experience' className='container'>
         <div className='experience'>
           <h3 className='experience__title'>Where I've Worked</h3>
           <div className='experience__content'>
@@ -31,9 +31,7 @@ export class Experience extends Component {
                         functional and aesthetic design and ensuring web design is optimized for
                         smartphones.</p>
                     </div>
-
                   </div>
-
                 </div>
 
                 <div className='experience__items'>

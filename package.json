@@ -3,9 +3,16 @@
   "version": "2.0.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.8",
+    "@fortawesome/fontawesome-svg-core": "^1.2.27",
+    "@fortawesome/free-brands-svg-icons": "^5.12.1",
+    "@fortawesome/free-regular-svg-icons": "^5.12.1",
+    "@fortawesome/free-solid-svg-icons": "^5.12.1",
+    "@fortawesome/react-fontawesome": "^0.1.8",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
     "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.19.2",
     "node-sass": "^4.13.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -40,5 +47,21 @@
   "main": "index.js",
   "devDependencies": {},
   "author": "Cj Oyales",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carljustineoyales/portfolio.git"
+  },
+  "keywords": [
+    "reactjs",
+    "scss",
+    "html5",
+    "css3",
+    "javascript",
+    "restful-api"
+  ],
+  "bugs": {
+    "url": "https://github.com/carljustineoyales/portfolio/issues"
+  },
+  "homepage": "https://github.com/carljustineoyales/portfolio#readme"
 }

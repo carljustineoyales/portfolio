@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 import Typewriter from 'typewriter-effect';
 const Herobanner = () => {
   return (
-    <section className='container'>
+    <section id='home' className='container'>
       <div className='herobanner'>
 
         <h4 className='herobanner__subheader'>Hi! My name is</h4>

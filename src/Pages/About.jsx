@@ -4,7 +4,7 @@ import './About.scss'
 import image from '../about-image.jpg'
 const About = () => {
   return (
-    <section className='container'>
+    <section id='about' className='container'>
       <div className='about'>
         <h3 className='about__title'>About Me</h3>
         <div className='about__content'>

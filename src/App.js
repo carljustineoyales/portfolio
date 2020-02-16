@@ -1,27 +1,23 @@
 import React from 'react';
 import './App.scss';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import Home from './Pages/Home';
+import Archive from './Pages/Archive';
 import Navbar from './Pages/Components/Navbar';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Herobanner from './Pages/Herobanner';
-import About from './Pages/About';
-import Experience from './Pages/Experience';
-import Works from './Pages/Works';
-import Contact from './Pages/Contact';
 
 function App() {
   return (
-    <Router>
     <div className="App">
-      <Navbar/>
-      <main>
-        <Herobanner/>
-        <About/>
-        <Experience/>
-        <Works/>
-        <Contact/>
-      </main>
-    </div>
+    <Router>
+      
+        <Switch>
+          <Route exact path="/" component={Home}/>
+          <Route path="/archive" component={Archive}/>
+            
+        </Switch>
+      
     </Router>
+    </div>
   );
 }
 

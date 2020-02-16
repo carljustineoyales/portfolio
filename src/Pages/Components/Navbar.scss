@@ -26,16 +26,9 @@ header{
         display: block;
       }
     }
-  
-    &__list{
-      list-style: none;
-      
-      
-    }
     &__item{
       display: inline-block;
       padding: 1em;
-      
     }
   
     &__links{
@@ -49,5 +42,6 @@ header{
         @include primary;
       }
     }
+    
   }
 }
