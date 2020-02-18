@@ -1,0 +1,147 @@
+@import '../Sass/variables';
+@import '../Sass/classes';
+
+.archive {
+  width: 100%;
+
+  &__link {
+    @include btn;
+    cursor:pointer;
+    border: none;
+    font-size: 1em;
+    padding: 1em 0;
+  }
+
+  &__title {
+    @include header-title;
+  }
+
+  &__list {
+    border-bottom: 1px $color1 solid;
+    margin-bottom: 1.5em;
+  }
+
+  &__items {
+    display: inline-block;
+    padding: 0;
+
+    &:first-child {
+      button {
+        border-top-left-radius: 4px;
+      }
+    }
+
+    &:not(:last-child) {
+      button {
+        border-right-width: 0;
+      }
+    }
+
+    &:last-child {
+      button {
+        border-top-right-radius: 4px;
+      }
+    }
+  }
+
+  &__btn {
+    @include btn;
+
+    &--secondary {
+      @include secondary;
+      border-radius: 0;
+      border-bottom: none;
+      font-size: 1.2em;
+      &--active{
+        background-color: $color1;
+        color:$color3
+      }
+      &:hover {
+        border-bottom: none;
+      }
+    }
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 323px);
+    grid-template-rows: repeat(1, 1fr);
+    width: 100%;
+    gap: 1em;
+    grid-auto-flow: row;
+  }
+
+  &__card {
+    width: 100%;
+    min-height: 22em;
+    background-color: #343636;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+
+    &-header {
+      padding: 1.6em;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-icon {
+      font-size: 2em;
+      color: $color2;
+    }
+
+    &-link {
+      font-size: 1.5em;
+      color: $color2;
+      margin-left: 0.5em;
+    }
+
+    &-body {
+      padding: 0 1.6em;
+      height: 11.5em;
+    }
+
+    &-desc {
+      font-size: 1em;
+    }
+
+    &-title {
+      color: $color4;
+      margin-bottom: 1em;
+    }
+
+    &-footer {
+      padding: 1.6em;
+
+    }
+
+    &-list {
+      display: flex;
+    }
+
+    &-tags {
+      margin-right: 1em;
+      font-size: 0.8em;
+
+    }
+
+    &:hover {
+      -webkit-box-shadow: 0px 0px 16px -1px rgba(0, 0, 0, 0.4);
+      -moz-box-shadow: 0px 0px 16px -1px rgba(0, 0, 0, 0.4);
+      box-shadow: 0px 0px 16px -1px rgba(0, 0, 0, 0.4);
+      transform: scale(1.02);
+    }
+  }
+
+  &__error{
+    font-size: 2em;
+    padding: 2em 0;
+  }
+}

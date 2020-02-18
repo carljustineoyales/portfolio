@@ -2,6 +2,19 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 <hr>
 <h1>Road Map</h1>
 
+<h3>Feb 19 2020</h3>
+<ul>
+  <li>Headless CMS Backend</li>
+  <li>Database</li>
+  <li>Concurrently Package</li>
+</ul>
+<h4><strong>Added</strong></h4>
+<ul>
+  <li>Client Folder</li>
+  <li>Backend Folder</li>
+</ul>
+<hr>
+
 <h3>Feb 17 2020</h3>
 <ul>
   <li>Github Rest API</li>
